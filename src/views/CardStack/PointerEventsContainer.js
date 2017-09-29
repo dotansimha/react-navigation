@@ -93,7 +93,7 @@ export default function create(Component: ReactClass<*>): ReactClass<*> {
 
       if (scene.isStale || navigation.state.index !== scene.index) {
         // The scene isn't focused.
-        return scene.index > navigation.state.index ? 'box-only' : 'none';
+        return 'none';
       }
 
       const offset = position.__getAnimatedValue() - navigation.state.index;
